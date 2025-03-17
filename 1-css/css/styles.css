@@ -1,0 +1,42 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b80202;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para encabezados */
+h1 {
+    color: #13bcff;
+}
+
+/* Estilos para párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para una clase específica */
+.mi-clase {
+    background-color: #100e5f;
+    color: #ce1717;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para un ID específico */
+#mi-id {
+    font-weight: bold;
+    background-color: #13bcff;
+}
