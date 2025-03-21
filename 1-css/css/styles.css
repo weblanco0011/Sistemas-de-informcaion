@@ -1,48 +1,80 @@
-/* Estilos para el cuerpo de la página */
+css
+CopiarEditar
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1eff00;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos para encabezados */
-h1 {
-    color: #fb0000;
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilos para párrafos */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: aquamarine;
-    background-color: rgb(159, 8, 247);
-}
-
-.uno{
-    background-color: #fb00d9;
-}
-
-/* Estilos para enlaces */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para una clase específica */
-.mi-clase {
-    background-color: #100e5f;
-    color: #ce1717;
+/* Barra de navegación */
+nav {
+    background-color: #444;
     padding: 10px;
-    border-radius: 5px;
 }
 
-/* Estilos para un ID específico */
-#mi-id {
-    font-weight: bold;
-    background-color: #13bcff;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Diseño principal usando Grid */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.contenido {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.lateral {
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+.extra {
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
