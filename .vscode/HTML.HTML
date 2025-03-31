@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hut</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('2.fondo.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            color: white;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f1c40f;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            height: 60px;
+            width: auto;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            text-align: center;
+        }
+
+        .the-food {
+            font-size: 24px;
+            letter-spacing: 10px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .food-hut {
+            font-size: 100px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .slogan {
+            font-size: 20px;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .gallery-btn {
+            padding: 15px 40px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .gallery-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .bottom-nav {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .bottom-nav a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Book-Table</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="the-food">THE FOOD</div>
+        <h1 class="food-hut">Food Hut</h1>
+        <p class="slogan">Always Fresh & Delightful</p>
+        <button class="gallery-btn">View Our Gallery</button>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="#">Blog</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+        <a href="#">Components</a>
+    </div>
+</body>
+</html>

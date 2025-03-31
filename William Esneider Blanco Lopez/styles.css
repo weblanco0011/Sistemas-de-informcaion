@@ -1,0 +1,139 @@
+/* Estilos generales */
+:root {
+    --primary: #fb254d;
+    --white: white;
+    --dark: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: var(--white);
+    background: var(--white);
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links.left {
+    justify-content: flex-start;
+    flex: 1;
+    margin-left: 50px;
+}
+
+.nav-links.right {
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 50px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-links .active {
+    color: var(--primary);
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.nav-links .btn {
+    background: var(--primary);
+    color: var(--white);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Hero Banner */
+.hero {
+    height: 100vh;
+    background: url('2-fondo.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin-bottom: 5px;
+    color: var(--white);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 39px;
+    margin-bottom: 15px;
+    color: var(--white);
+    letter-spacing: 1px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero h2 span {
+    display: block;
+    text-align: center;
+}
+
+.hero .btn {
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+}
+
+.hero .btn {
+    text-decoration: none;
+    border: none;
+}

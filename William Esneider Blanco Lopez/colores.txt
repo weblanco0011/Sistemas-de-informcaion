@@ -1,0 +1,2 @@
+color: #fb254d
+color: white
